@@ -1,0 +1,25 @@
+{
+    "package":[
+        {
+            "id":"1",
+            "packageImage":"image-1.PNG",
+            "packageprice":"3, 480",
+            "packagesubtitle":"HR Remote Manager",
+            "packagesubtitle2":"Basic, Bronze, Foundation"    
+        },
+        {
+            "id":"2",
+            "packageImage":"image-1.PNG",
+            "packageprice":"3, 480",
+            "packagesubtitle":"HR Remote Manager",
+            "packagesubtitle2":"Basic, Bronze, Foundation"    
+        },
+        {
+            "id":"3",
+            "packageImage":"image-1.PNG",
+            "packageprice":"3, 480",
+            "packagesubtitle":"HR Remote Manager",
+            "packagesubtitle2":"Basic, Bronze, Foundation"    
+        }
+    ]
+}

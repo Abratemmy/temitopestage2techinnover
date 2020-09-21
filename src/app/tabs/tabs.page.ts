@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['tabs.page.scss']
 })
 export class TabsPage {
+  color: string = "danger"
 
   constructor() {}
+  selectTab2(){
+    this.color = "secondary"
+  }
 
 }

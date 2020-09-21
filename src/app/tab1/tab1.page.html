@@ -1,17 +1,179 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+<ion-header>
+  <ion-toolbar class="new-background-color" >
+      <ion-button slot="start" style="--background: transparent;--border-radius:0px; --border:0%" click="menuFunction()">
+        <ion-icon  name="menu-outline" size="large"></ion-icon> 
+      </ion-button>
+      <!-- <div class="dont-show">
+        <ion-list>blog</ion-list>
+        <ion-list>career</ion-list>
+        <ion-list>contact</ion-list>
+      </div> -->
+
+    <ion-title style="font-size: 10px;"><img src="../../assets/icon/HR Work Logo.png" width="50%" /></ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
+<ion-content >
+  <ion-header class="ion-section1" >
+      <section class="ion-text-center bgimage" style="color:white">
+        <div>
+          <ul>
+            <li><a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          </ul>
+        </div>
+        <div style="padding:0px 10px ;">
+          <p>We know that you are busy with deadlines and customer demands and this consumes all your available time and as your business expands</p>
+          <h2>We are HR Experts we can help</h2>
+        </div>
+        <!-- <div class="row">
+          <div class="col-sm-1">
+            hello
+          </div>
+          <div class="col-sm-11">ji</div>
+        </div> -->
+      </section>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+    
+    <ion-item-divider class="ion-item-divider" >
+      <h3>Who  we are</h3>
+    </ion-item-divider>
+
+    <ion-grid style="padding: 0px 5px 0px 0px">
+      <ion-row>
+        <ion-col size="12" size-md="6">
+          <ion-item class="ion-item" lines="none" style="margin:0%">
+            <p>HR Work is an advisory firm with strong competence  and experience in providing Human Resources Retainership Services  to small or  medium sized organisations. 
+           <br />
+              We know that  you are busy with deadlines and customer demands and this consumes all your available time and as your business expands, your employee challenges begin to multiply and then problems with hiring, setting and measuring performance, policies for direction among others become more evitable.  
+            </p>
+          </ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <ion-card class="ion-card1"style="border-radius: 0%; margin-left:0%; padding-left:0%">
+                <ion-card-header>
+                  <ion-card-subtitle class="cardheader">Our Mission:</ion-card-subtitle>
+                </ion-card-header>
+                  <ion-card-content class="visionmission">
+                    To make HR Systems work for Small to Medium sized companies.
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+
+              <ion-col size="6">
+                <ion-card class="ion-card1"  style="border-radius: 0%;margin-left:0%; padding-left:0%">
+                  <ion-card-header>
+                    <ion-card-subtitle class="cardheader">Our Vision:</ion-card-subtitle>
+                  </ion-card-header>
+                  <ion-card-content class="visionmission">
+                    To be the HR retainership firm of choice to thriving businesses
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+          <ion-item lines="none" style="padding-left: 0%;margin-left: 0px;">
+            <ion-button class="button" style="--background:#EF0633; --border-radius:4px;">Discover more
+              <ion-icon slot="end" name="play" size="large"></ion-icon> 
+            </ion-button>
+            
+          </ion-item>
+
+         
+        </ion-col>
+        <ion-col size="12" size-md="6">
+          <img src="../../assets/image2.png"/>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- another section starts here -->
+    <ion-item-divider class="ion-item-divider" >
+      <h3>Our packages</h3>
+    </ion-item-divider>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngFor="let package of packages; let i = index" size="6" class="cardstyle">
+          <ion-card>
+            <ion-card-header no-padding style="padding:0%">
+              <div >
+                <img [src]="package?.packageImage" width="100%"/>
+              </div>
+            </ion-card-header>
+             <ion-card-subtitle class="ion-text-center"> 
+                <h6 style="font-size: 12px;">{{package?.packagesubtitle}}</h6>
+            </ion-card-subtitle>
+            <ion-label class="ion-text-center">
+              <div style="color:#EF0633; font-weight: bold;padding-bottom: 10px;">${{package?.packageprice}}</div>
+              <div style="font-size: 9px;">{{package?.packagesubtitle2}}</div>
+            </ion-label>
+            <ion-card-content>
+              <ion-button (click)="order?.addToCart(item)" expand="block" style="--border-radius: 20px; --background:none; color: 
+              gray;text-transform: capitalize; font-size: 13px;">Add to cart</ion-button>
+            </ion-card-content> 
+          </ion-card>
+        </ion-col> 
+      </ion-row>      
+    </ion-grid>
+    <ion-label class="ion-text-center">
+      <div class="ion-text-center"><ion-button style="--background:#EF0633;">View more packages<ion-icon slot="end" name="play" size="large"></ion-icon> </ion-button></div>
+    </ion-label>
+
+    <!-- another section starts here -->
+    
+    <!-- latest news section starts here -->
+  <ion-item-divider class="ion-item-divider" >
+    <h3>Latest news</h3>
+  </ion-item-divider>
+
+    <div style="padding-top: 15px;">
+   <ion-slides [options]="sliderConfig" pager="true" pager style="padding-bottom: 30px; ">
+     <ion-slide *ngFor="let new of news; let i=index">
+      <ion-grid no-gutter class="no-gutter">
+        <ion-row style="border: 1px solid gray">
+          <ion-col size="8" style="background:rgb(240, 240, 240);" class="ion-text-left">
+            <div style="position:absolute; top:40%;">
+            <div style="color:#EF0633;font-size: 14px; padding: 0px 0px 5px 0px;">{{new?.title}}</div>
+            <div style="color:gray;font-size: 9px">{{new?.date}}</div>
+          </div>
+          </ion-col>
+          <ion-col size="4"style="padding:0% 0%"><img [src]="new?.image" width="100%;" height="150"/></ion-col>
+        </ion-row>
+      </ion-grid>
+      <!-- <h1>{{new?.date}}</h1> -->
+    </ion-slide>
+   
+   </ion-slides>
+  </div>
+ 
+  <div style="background: #EF0633;padding: 20px 5px 20px 5px">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" size-md="4" class="footer">
+          <img src="../../assets/icon/HR Work Logo.png" />
+        </ion-col>
+        <ion-col size="6" size-md="4" class="list">
+          <ul style="list-style: none; color: white; ">
+            <li>About</li>
+            <li>Our packages</li>
+            <li>Blog</li>
+            <li>career</li>
+          </ul>
+          
+        </ion-col>
+        <ion-col size="6" size-md="4"></ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </div>
+
+  
+  
 </ion-content>

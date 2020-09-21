@@ -1,0 +1,125 @@
+body{
+    background-color: var(--primaryColor);
+}
+.new-background-color{
+    --background:#888888;
+}
+.dont-show{
+    display: none;
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+    opacity: 1;
+    overflow: auto;
+}
+.ion-section1{
+    background-image: linear-gradient(180deg, rgba(49, 35, 35, 0.443), rgba(43, 39, 39, 0.443)),url('../../assets/bg1.PNG');
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-bottom: none!important;
+    width: 100%;
+   border-image-width: auto;
+}
+a{
+    color: white;
+}
+.bgimage{
+    top: 50%;
+    position: absolute;
+    // text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.bgimage ul{
+    padding: 0%;
+    margin: 0%;
+}
+.bgimage ul li{
+    list-style-type: none;
+    padding-left: 0%;
+}
+.bgimage p{ 
+    font-size: 15px;
+    color: rgb(243, 242, 242);
+  
+}
+.bgimage h2{
+    font-weight: bold;
+
+}
+h3{
+    color:#EF0633;
+    font-weight: bold;
+}
+.ion-item-divider{
+    border-bottom-color:   #F99BAD!important;
+}
+.ion-item p{
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: justify;
+
+}
+.ion-card1{
+    background-color: #F99BAD;
+    color: #EF0633;
+    border-radius: none;
+     
+}
+.ion-card1 .cardheader{
+    color:#EF0633;
+    font-weight: bold;
+}
+.visionmission{
+    position: relative;
+    top:-10px;
+    font-size: 10px;
+    padding-bottom: 15px;
+}
+.button{
+    color: white;
+    font-weight: bold;
+    
+}
+
+.slider-pager-page{
+ color:#EF0633;
+}
+.slider-pager-page.active{
+    color:green;
+}
+.section-card-title{
+    height: 50px;
+    color:white;
+    font-weight: bold;
+    font-size: 17px;
+}
+.section-card-subtitle{
+    text-align: justify;
+}
+.whyhrwork{
+    background-image: url(../../assets/image2.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%}
+
+.ionlist{
+    --background: none;
+}
+.footer img{
+    color: white;
+}
+.list li{
+    list-style-type: none;
+    display: flex;
+}

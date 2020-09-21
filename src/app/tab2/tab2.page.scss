@@ -1,0 +1,32 @@
+.new-background-color{
+    --background:#888888;
+    --color:red;
+}
+.back-button{
+ --background-color: red;
+}
+.whyhrwork{
+    background-image: url(../../assets/image2.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    // height: auto;
+    color: white;
+}
+.whyhrwork .section-card-title{
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    color:white;
+    font-size: 17px;
+}
+.whyhrwork .section-card-subtitle{
+    color: rgb(245, 241, 241);
+    padding-bottom: 8px;
+}
+.whyhrwork .section-card-text{
+    color: rgb(216, 212, 212);
+    text-align: justify;
+}
