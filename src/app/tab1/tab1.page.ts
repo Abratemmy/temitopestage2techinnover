@@ -78,5 +78,8 @@ sliderConfig = {
 }
 
   constructor() {}
+  functionClick(){
+    console.log('welcome')
+  }
 
 }
